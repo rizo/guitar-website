@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+      ______     __  __     __     ______   ______     ______    
+     /\  ___\   /\ \/\ \   /\ \   /\__  _\ /\  __ \   /\  == \   
+     \ \ \__ \  \ \ \_\ \  \ \ \  \/_/\ \/ \ \  __ \  \ \  __<   
+      \ \_____\  \ \_____\  \ \_\    \ \_\  \ \_\ \_\  \ \_\ \_\ 
+        \/_____/   \/_____/   \/_/     \/_/   \/_/\/_/   \/_/ /_/ 
+	                                                        
+		GUITAR: GUI Tool for Automata Representation
+		Rizo Isrof, (c) 2012 Universidade do Porto. All right reserved.
+-->
+<html>
+    <head>
+        <title>${title}</title>
+
+		<!--- Styles -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./views/main.view/main.css" />
+
+		<!-- Javascript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+        <script src="./views/main.view/main.js"></script>
+    </head>
+    <body onload="init()">
+        <div id="wrapper">
+            <div id="header" class="clearfix">
+                <a title="GUITAR - Home" href="index.cgi" id="logo" class="">
+                    <span id="app-name"><span>GUITAR</span></span>
+                    <span id="app-desc">GUI Tool for Automata<br />Representation</span>
+                </a>
+                <div id="menu" class="">
+                    <ul>
+                        <li id="home"><a href="#">Home</a></li>
+                        <li id="about"><a href="#">About</a></li>
+                        <li id="downloads"><a href="#">Download</a></li>
+                        <li id="documentation"><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content" class="clearfix">
+                
+            </div>
+            <div id="footer">
+                Rizo Isrof, Copyright &copy; 2013 Universidade do Porto. All right reserved.
+            </div>
+        </div>
+
+        <!-- Content Elements -->
+        <div id="home-content" class="hidden">
+            <div id="banner">
+                <h1>Automata drawing<br /><span>and manipulation.</span></h1>
+                <a href="#" onclick="load_content('about')">Learn More &raquo;</a>
+            </div>
+        </div>
+        <div id="about-content" class="hidden">
+            <div id="about-descr">
+                <h1>Overview</h1>
+                <br/>
+                <p style="width: 300px;">GUITAR is an open-source project which aims to create a software tool for automata editing, manipulation and visualization. Although the application specially focuses on finite automata diagrams, it also supports other types of graphs and data and computation representations, such as digraphs, multigraphs, pushdown automata and Turing machines. It intends to include automatic and assisted diagram drawing, interactive editing, algorithm animation, and import/export filters.</p>
+                <img src="./views/main.view/image3.png" alt="GUITAR Application" />
+                <hr style="clear: both; visibility: hidden;" />
+                <p style="margin-right: 50px; margin-bottom: 50px; text-align: justify">GUITAR is implemented using the <a href="http://qt-project.org">Qt graphical framework</a> which guarantees a solid foundation for an efficient, extensible and cross-platform application architecture. It has support for rich styling of the diagrams that represent automata; it is possible to fully customize the appearance of the objects on the canvas and export it in the most standard formats. However, GUITAR intentionally provides a very limited set of functionalities for automata manipulation - only basic structural operations are allowed, such as adding and removing graph elements and defining their attributes.<br />For the advanced manipulation and analysis of the automata, and the regular languages behind them, GUITAR relies on the <a href="http://fado.dcc.fc.up.pt">FAdo library</a>. The FAdo system, developed
+at Department of Computer Science by Rog&#233;rio Reis and Nelma Moreira, aims to provide an open source extensible high-performance software library for the symbolic manipulation of automata and other models of computation.<br />The central motivation of the project is supply an easy to deploy system to assist the work with finite automata and to encourage the pedagogical use of GUITAR.</p>
+            </div>
+        </div>
+        <div id="downloads-content" class="hidden">
+            <div id="doc-descr">
+                <p>Sorry, there is no public release of GUITAR at the moment. The application is currently in a final development stage and we are hardly working on a beta relase.</p>
+                <br />
+                <br />
+                <p style="text-align: center; font-size: 22px;">Get notified when the beta release launches!</i></p>
+                <form action="subscribe.cgi" method="post">
+                    <input type="text" name="email" id="email"  value="E-mail address..." onfocus="if(this.value == 'E-mail address...') { this.value = ''; }" />
+                    <input type="submit" name="Submit"  id="ok-button" value="OK" />
+                </form>
+            </div>
+        </div>
+        <div id="documentation-content" class="hidden">
+            <div style="padding: 70px; text-align: center;">Coming soon...</div>
+        </div>
+    </body>
+</html>
+
