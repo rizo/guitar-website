@@ -10,6 +10,8 @@ form = cgi.FieldStorage()
 # Get data from fields
 email = form.getvalue('email')
 
+# TODO: Add validation
+
 if not email:
 	print "Content-type:text/html\r\n\r\n"
 	print "No valid email address provided!"
