@@ -1,4 +1,4 @@
-# GUITAR: GUI Tool for Automata Representation
+# GUI Tool for Automata Representation
 
 The official page of the GUITAR project.
 
